@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+section {
+  padding: 2rem;
+}
+
+.result {
+  background-color: blue;
+  border-radius: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

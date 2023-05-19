@@ -1,0 +1,70 @@
+// PRIMARY COLORS
+$lightRed: hsl(0, 100%, 67%);
+$orangeYellow: hsl(39, 100%, 56%);
+$greenTeal: hsl(166, 100%, 37%);
+$cobaltBlue: hsl(234, 85%, 45%);
+
+// NEUTRAL COLORS
+$white: hsl(0, 0%, 100%);
+$paleBlue: hsl(221, 100%, 96%);
+$lightLavender: hsl(241, 100%, 89%);
+$darkGrayBlue: hsl(224, 30%, 27%);
+
+// GRADIENTS
+//background
+$lightSlateBlue: hsl(252, 100%, 67%);
+$lightRoyalBlue: hsl(241, 81%, 54%);
+
+//circle
+$violetBlue: hsla(256, 72%, 46%, 1);
+$persianBlue: hsla(241, 72%, 46%, 0);
+
+// TYPOGRAPHY
+$defaultFontSize: 1.8rem;
+$defaultFont: 'Hanken Grotesk', sans-serif;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: $defaultFontSize;
+  font-family: $defaultFont;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container{
+  box-shadow: 0 10px 35px 0 rgba(0,0,0,0.2);
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+
+  & > *{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+  }
+}
+
+section{
+  padding: 2rem;
+}
+
+.result{
+  background-color: blue;
+  border-radius: 2rem;
+}
+
+
+
