@@ -104,13 +104,13 @@ section{
   &-compliment{
     font-size: 3rem;
     color: $white;
+    letter-spacing: 0.5px;
   }
 
   &-explanation{
     line-height: 1.4;
   }
 }
-
 
 .summary{
   display: flex;
@@ -125,7 +125,13 @@ section{
   }
 
   &-item-score{
-    color: black;
+    font-weight: 600;
+    color: #999;
+
+    strong{
+      font-weight: 800;
+      color: $darkGrayBlue;
+    }
   }
 
   &-list-item{
@@ -156,8 +162,6 @@ section{
       color: $cobaltBlue;
     }
 
-    
-
     &-header{
       display: flex;
       align-items: center;
@@ -173,9 +177,64 @@ section{
     border-radius: 5rem;
     font-size: $defaultFontSize;
     color: $paleBlue;
+    
+    &:hover{
+      cursor: pointer;
+      background: linear-gradient(to bottom, $lightSlateBlue, $lightRoyalBlue);
+    }
   }
 }
 
+@media (max-width: 600px){
+  body{
+    align-items: flex-start;
+    font-size: 1.6rem;
+  }
+  
+  .container{
+    flex-direction: column;
+    border-radius: 0;
+    height: 100vh;
+  }
+
+  section{
+    max-width: 100%;
+  }
+
+  .result{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 3rem 3rem;
+
+    &-title{
+      font-size: 2rem;
+    }
+
+    &-score{
+      width: 15rem;
+      height: 15rem;
+
+      &-score{
+        font-size: 5.5rem;
+      }
+    }
+
+    &-compliment{
+      font-size: 2.5rem;
+    }
+  }
+
+  .summary{
+    gap: 2.5rem;
+    padding: 3rem 3rem;
+
+    &-title{
+      font-size: 2rem;
+    }
+  }
+}
 
 
 

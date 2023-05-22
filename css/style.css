@@ -65,6 +65,7 @@ section {
 .result-compliment {
   font-size: 3rem;
   color: hsl(0, 0%, 100%);
+  letter-spacing: 0.5px;
 }
 .result-explanation {
   line-height: 1.4;
@@ -82,7 +83,12 @@ section {
   gap: 1.5rem;
 }
 .summary-item-score {
-  color: black;
+  font-weight: 600;
+  color: #999;
+}
+.summary-item-score strong {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
 }
 .summary-list-item {
   list-style-type: none;
@@ -121,6 +127,52 @@ section {
   border-radius: 5rem;
   font-size: 1.8rem;
   color: hsl(221, 100%, 96%);
+}
+.summary-continue-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    font-size: 1.6rem;
+  }
+  .container {
+    flex-direction: column;
+    border-radius: 0;
+    height: 100vh;
+  }
+  section {
+    max-width: 100%;
+  }
+  .result {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 3rem 3rem;
+  }
+  .result-title {
+    font-size: 2rem;
+  }
+  .result-score {
+    width: 15rem;
+    height: 15rem;
+  }
+  .result-score-score {
+    font-size: 5.5rem;
+  }
+  .result-compliment {
+    font-size: 2.5rem;
+  }
+  .summary {
+    gap: 2.5rem;
+    padding: 3rem 3rem;
+  }
+  .summary-title {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
